@@ -1,0 +1,25 @@
+# Archivos de usuario
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Carpeta de configuración de Visual Studio
+.vs/
+
+# Compilados
+[Bb]in/
+[Oo]bj/
+
+# Paquetes
+*.nupkg
+*.snupkg
+packages/
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Configuración de sistema
+Thumbs.db
+.DS_Store
