@@ -30,6 +30,7 @@
         {
             this.groupBoxSaleForm = new System.Windows.Forms.GroupBox();
             this.groupBoxFinishSale = new System.Windows.Forms.GroupBox();
+            this.buttonExitSale = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxTotalSale = new System.Windows.Forms.TextBox();
             this.labelTotalSale = new System.Windows.Forms.Label();
@@ -65,7 +66,6 @@
             this.comboBoxSearchClient = new System.Windows.Forms.ComboBox();
             this.checkBoxMinorAmount = new System.Windows.Forms.CheckBox();
             this.labelClientSearch = new System.Windows.Forms.Label();
-            this.buttonExitSale = new System.Windows.Forms.Button();
             this.groupBoxSaleForm.SuspendLayout();
             this.groupBoxFinishSale.SuspendLayout();
             this.groupBoxPayment.SuspendLayout();
@@ -103,6 +103,15 @@
             this.groupBoxFinishSale.TabIndex = 3;
             this.groupBoxFinishSale.TabStop = false;
             this.groupBoxFinishSale.Text = "FinishSale";
+            // 
+            // buttonExitSale
+            // 
+            this.buttonExitSale.Location = new System.Drawing.Point(9, 281);
+            this.buttonExitSale.Name = "buttonExitSale";
+            this.buttonExitSale.Size = new System.Drawing.Size(121, 26);
+            this.buttonExitSale.TabIndex = 7;
+            this.buttonExitSale.Text = "Exit";
+            this.buttonExitSale.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -192,6 +201,7 @@
             this.groupBoxProduct.TabIndex = 1;
             this.groupBoxProduct.TabStop = false;
             this.groupBoxProduct.Text = "Product";
+            this.groupBoxProduct.Enter += new System.EventHandler(this.groupBoxProduct_Enter);
             // 
             // groupBox1
             // 
@@ -271,32 +281,38 @@
             this.CodeProduc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.CodeProduc.HeaderText = "Code";
             this.CodeProduc.Name = "CodeProduc";
+            this.CodeProduc.ReadOnly = true;
             this.CodeProduc.Width = 101;
             // 
             // ProductName
             // 
             this.ProductName.HeaderText = "Product";
             this.ProductName.Name = "ProductName";
+            this.ProductName.ReadOnly = true;
             // 
             // StockProduct
             // 
             this.StockProduct.HeaderText = "Stock";
             this.StockProduct.Name = "StockProduct";
+            this.StockProduct.ReadOnly = true;
             // 
             // PriceProduct
             // 
             this.PriceProduct.HeaderText = "Price";
             this.PriceProduct.Name = "PriceProduct";
+            this.PriceProduct.ReadOnly = true;
             // 
             // SubtotalProduct
             // 
             this.SubtotalProduct.HeaderText = "Subtotal";
             this.SubtotalProduct.Name = "SubtotalProduct";
+            this.SubtotalProduct.ReadOnly = true;
             // 
             // DeleteProduct
             // 
             this.DeleteProduct.HeaderText = "Delete";
             this.DeleteProduct.Name = "DeleteProduct";
+            this.DeleteProduct.ReadOnly = true;
             this.DeleteProduct.Text = "-";
             this.DeleteProduct.Width = 50;
             // 
@@ -430,15 +446,6 @@
             this.labelClientSearch.Size = new System.Drawing.Size(82, 17);
             this.labelClientSearch.TabIndex = 0;
             this.labelClientSearch.Text = "Client search";
-            // 
-            // buttonExitSale
-            // 
-            this.buttonExitSale.Location = new System.Drawing.Point(9, 281);
-            this.buttonExitSale.Name = "buttonExitSale";
-            this.buttonExitSale.Size = new System.Drawing.Size(121, 26);
-            this.buttonExitSale.TabIndex = 7;
-            this.buttonExitSale.Text = "Exit";
-            this.buttonExitSale.UseVisualStyleBackColor = true;
             // 
             // SaleForm
             // 
