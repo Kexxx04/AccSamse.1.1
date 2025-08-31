@@ -16,7 +16,7 @@ namespace AccSamse._1._1.Views
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SaleForm());
+            Application.Run(new Inventario());
            
         }
     }
